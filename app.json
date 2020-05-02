@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "CoronaTracker",
+    "name": "CoVTrack",
     "slug": "CoronaTracker",
     "platforms": [
       "ios",
@@ -9,9 +9,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/img/playstore.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/img/playstore.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,7 +22,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.coronatracker.track"
+    },
+    "android": {
+      "package": "com.coronatracker.covTracker"
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
   }
 }
